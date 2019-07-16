@@ -22,11 +22,11 @@
 <!-- /ds header -->
 
 
-# binderhub-hadoop
+# binderhub-hive
 
 A minimal repository for running [Apache™ Hadoop®](http://hadoop.apache.org/) on [binderhub](https://github.com/jupyterhub/binderhub) instances. 
 
-The tutorial for downloading, starting it in pseudo-distributed mode, running a map-reduce job, etc. is presented in the [running-hadoop.ipynb](./running-hadoop.ipynb). For a better visualization of the notebook please see the [running-hadoop.ipynb](https://nbviewer.jupyter.org/github/thedatasociety/binderhub-hadoop/blob/master/running-hadoop.ipynb) via [nbviewer](https://nbviewer.jupyter.org).
+The tutorial for downloading, starting it in pseudo-distributed mode, running a map-reduce job, etc. is presented in the [running-hadoop.ipynb](./running-hadoop.ipynb). For a better visualization of the notebook please see the [running-hadoop.ipynb](https://nbviewer.jupyter.org/github/thedatasociety/binderhub-hive/blob/master/running-hadoop.ipynb) via [nbviewer](https://nbviewer.jupyter.org).
 
 ## Table of contents
 
@@ -54,24 +54,24 @@ The list below provides the badges and the hyperlinks for launching Jupyter/Jupy
     
 #### JupyterLab 
   
-  - [![launch @ gke.mybinder.org][badge-jupyterlab-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/binderhub-hadoop/master?urlpath=lab)
+  - [![launch @ gke.mybinder.org][badge-jupyterlab-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/binderhub-hive/master?urlpath=lab)
 
-  - [![launch @ ovh.mybinder.org][badge-jupyterlab-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/binderhub-hadoop/master?urlpath=lab)
+  - [![launch @ ovh.mybinder.org][badge-jupyterlab-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/binderhub-hive/master?urlpath=lab)
 
-  - [![launch @ gesis.org][badge-jupyterlab-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-hadoop/master?urlpath=lab)
+  - [![launch @ gesis.org][badge-jupyterlab-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-hive/master?urlpath=lab)
 
-  - [![launch @ pangeo.io][badge-jupyterlab-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-hadoop/master?urlpath=lab)
+  - [![launch @ pangeo.io][badge-jupyterlab-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-hive/master?urlpath=lab)
 
 
 #### Jupyter 
   
-  - [![launch @ gke.mybinder.org][badge-jupyter-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/binderhub-hadoop/master?urlpath=tree)
+  - [![launch @ gke.mybinder.org][badge-jupyter-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/binderhub-hive/master?urlpath=tree)
 
-  - [![launch @ ovh.mybinder.org][badge-jupyter-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/binderhub-hadoop/master?urlpath=tree)
+  - [![launch @ ovh.mybinder.org][badge-jupyter-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/binderhub-hive/master?urlpath=tree)
 
-  - [![launch @ gesis.org][badge-jupyter-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-hadoop/master?urlpath=tree)
+  - [![launch @ gesis.org][badge-jupyter-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-hive/master?urlpath=tree)
 
-  - [![launch @ pangeo.org][badge-jupyter-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-hadoop/master?urlpath=tree)
+  - [![launch @ pangeo.org][badge-jupyter-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-hive/master?urlpath=tree)
 
          
 ### Launching this repository locally using [repo2docker](https://github.com/jupyter/repo2docker)
@@ -87,7 +87,7 @@ Please also be aware that the `--ip 0.0.0.0` directive will start a sever which 
 ```bash
 repo2docker -p 8888:8888 \
             -v $(echo ~):$(echo ~)/local-home \
-            https://github.com/thedatasociety/binderhub-hadoop \
+            https://github.com/thedatasociety/binderhub-hive \
             jupyter lab --ip 0.0.0.0 --NotebookApp.token='dstoken1234567'
 ```
 
@@ -108,10 +108,10 @@ See the [repo2docker](https://github.com/jupyter/repo2docker) documentation for 
 
 <!-- icons -->
 
-[icon-twitter]:https://raw.githubusercontent.com/thedatasociety/binderhub-hadoop/master/resources/images/twitter-icon.png
-[icon-slack]:https://raw.githubusercontent.com/thedatasociety/binderhub-hadoop/master/resources/images/slack-icon.png
-[icon-github]:https://raw.githubusercontent.com/thedatasociety/binderhub-hadoop/master/resources/images/github-icon.png
-[icon-docker]:https://raw.githubusercontent.com/thedatasociety/binderhub-hadoop/master/resources/images/docker-icon.png
+[icon-twitter]:https://raw.githubusercontent.com/thedatasociety/binderhub-hive/master/resources/images/twitter-icon.png
+[icon-slack]:https://raw.githubusercontent.com/thedatasociety/binderhub-hive/master/resources/images/slack-icon.png
+[icon-github]:https://raw.githubusercontent.com/thedatasociety/binderhub-hive/master/resources/images/github-icon.png
+[icon-docker]:https://raw.githubusercontent.com/thedatasociety/binderhub-hive/master/resources/images/docker-icon.png
 
 <!-- JupyterLab badges -->
 
